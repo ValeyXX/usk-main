@@ -83,10 +83,10 @@ class AuthController extends Controller
             ];
 
             $userRegist = User::create($infologin);
-            $rek = '12' . auth()->id() . now()->format('YmdHis');
+            $rekening = '12' . auth()->id() . now()->format('YmdHis');
             Wallet::create([
                 'id_user' => $userRegist->id,
-                'rekening' => $rek,
+                'rekening' => $rekening,
                 'saldo' => 0,
                 'status' => 'aktif',
             ]);

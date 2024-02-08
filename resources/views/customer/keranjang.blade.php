@@ -77,7 +77,7 @@
                                         <div class="text-right mt-3">
                                             <form action="{{ route('checkout') }}" method="post">
                                                 @csrf
-                                                <button type="submit" class="btn btn-primary col-2">Beli</button>
+                                                <button type="submit" class="btn btn-info col-2">Checkout</button>
                                             </form>
                                         </div>
                                     </div>

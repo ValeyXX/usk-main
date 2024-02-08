@@ -10,8 +10,8 @@
                     <div class="sales-report-area sales-style-two">
                         <div class="row">
                             <!-- data table start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
+                            <div class="col-12 mt-12">
+                                <div class="card ml-5">
                                     <div class="card-body">
                                         <h4 class="header-title">Riwayat Transaksi</h4>
                                         <div class="data-tables">

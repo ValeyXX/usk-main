@@ -44,7 +44,7 @@
         </div>
   
         <div class="form__field">
-          <input type="submit" value="Regis">
+          <input type="submit" value="Sign Up">
         </div>
   
       </form>

@@ -41,8 +41,10 @@
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
-
                                             </table>
+                                            <div class="text-right mt-3">
+                                                <a href="{{ route('cetak.topup') }}" class="btn btn-info col-2 btn-sm">Cetak</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

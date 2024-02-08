@@ -14,10 +14,10 @@
 
                                     <div class="col-md-12">
                                         <div class="card">
-                                            <div class="card-header" style="background-color: #0367e0 ; font-weight: bold">
+                                            <div class="card-header" style="background-color: #680000 ; font-weight: bold">
                                                 <div class="row">
                                                     <div class="col mt-3 ml-3" style="color: rgb(255, 255, 255)">
-                                                        Menu
+                                                        Produk
                                                     </div>
                                                     <div class="col d-flex justify-content-end">
 

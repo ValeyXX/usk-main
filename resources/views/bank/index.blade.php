@@ -28,12 +28,12 @@
                                                     </thead>
                                                     <tbody>
                                                         @foreach ($requestTopups as $i => $topup)
-                                                        @if ($topup->status == 'menunggu')
+                                                        
                                                             
                                                     
                                                             <tr>
                                                                 <td>{{ $i + 1 }}</td>
-                                                                {{-- <td>{{ $topup->wallet->user->name}}</td> --}}
+                                                                <td>{{ $topup->wallet->user->name}}</td>
                                                                 <td>{{ $topup->rekening }}</td>
                                                                 <td>{{ $topup->nominal }}</td>
                                                                 <td>{{ $topup->kode_unik }}</td>
@@ -63,7 +63,7 @@
                                                                     @else
                                                                         <button type="submit"
                                                                             class="btn btn-danger btn-sm col-12">{{ $topup->status }}</button>
-                                                                    @endif
+                                                                    
                                                                     @endif
                                                                 </td>
                                                             </tr>

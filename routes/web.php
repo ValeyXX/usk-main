@@ -48,12 +48,15 @@ Route::get('/bank', [DashboardController::class, 'bankIndex'])->name('bank.index
  // LAPORAN
  Route::get('/bank/laporan/topup', [BankController::class, 'laporanTopup'])->name('bank.laporan.topup');
  Route::get('/bank/laporan/withdrawal', [BankController::class, 'laporanWithdrawal'])->name('bank.laporan.withdrawal');
+ Route::get('/bank/withdrawal/cetak', [BankController::class, 'cetakWithdrawal'])->name('cetak.withdrawal');
+ Route::get('/bank/topup/cetak', [bankController::class, 'cetakTopup'])->name('cetak.topup');
 
 // kantin
     Route::get('/kantin', [DashboardController::class, 'kantinIndex'])->name('kantin.index');
     Route::resource('/kantin/produk', ProdukController::class);
     Route::resource('/kantin/kategori', KategoriController::class);
     Route::get('/kantin/laporan', [TransaksiController::class, 'laporanTransaksi'])->name('kantin.laporan.transaksi');
+    Route::get('/kantin/transaksi/cetak', [TransaksiController::class, 'cetakTransaksi'])->name('print.transaksis');
 
 Route::resource('produks', ProdukController::class);
 
@@ -72,6 +75,7 @@ Route::get('/customer', [DashboardController::class, 'customerIndex'])->name('cu
     Route::post('/customer/tambahKeKeranjang/{id}', [TransaksiController::class, 'addToCart'])->name('addToCart');
     Route::delete('/customer/keranjang/destroy/{id}', [TransaksiController::class, 'keranjangDestroy'])->name('keranjang.destroy');
     Route::post('/customer/checkout', [TransaksiController::class, 'checkout'])->name('checkout');
+    
     Route::get('/customer/transaksi/cetak', [TransaksiController::class, 'cetakTransaksi'])->name('cetak.transaksi');
 
     // Riwayat transaksi
